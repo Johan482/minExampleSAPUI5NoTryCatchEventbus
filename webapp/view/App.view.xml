@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.f" controllerName="sap.ui.demo.todo.controller.App" displayBlock="true">
+		<App>
+			<Page>
+				<customHeader>
+					<f:ShellBar core:require="{ Helper: 'sap/ui/demo/todo/util/Helper' }" title="Minimal Example" homeIcon="{:= Helper.resolvePath('./img/logo_ui5.png') }" />
+				</customHeader>
+				<content>
+					<f:DynamicPage>
+						<f:content>
+							<ToolBar>
+								<Button id="publishEvent" text="Publish the normal event" press=".publishNormalEvent" type="Success"/>
+								<Button id="publishDumpEvent" text="Publish the dump event" press=".publishDumpEvent" type="Reject"/>
+							</ToolBar>
+						</f:content>
+					</f:DynamicPage>
+				</content>
+
+			</Page>
+		</App>
+</mvc:View>
