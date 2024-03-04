@@ -17,7 +17,7 @@ sap.ui.define([
 
 			// Therefore event handler 2 is never called
 			Global.getCore().getEventBus().subscribe("TEST-EVENT-DUMP", function(oKitten, sChannelName, oData) {
-				console.log(oData.valueToLog);
+				console.log("Handler 2 Runs with Payload: " + oData.valueToLog);
 			});
 
 
@@ -30,7 +30,7 @@ sap.ui.define([
 
 			// Therefore event handler 2 is called
 			Global.getCore().getEventBus().subscribe("TEST-EVENT", function(oKitten, sChannelName, oData) {
-				console.log(oData.valueToLog);
+				console.log("Handler 2 Runs with Payload: " + oData.valueToLog);
 			});
 		},
 
